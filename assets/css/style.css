@@ -671,18 +671,16 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 700; line-height
     animation: scroll 40s linear infinite;
 }
 .marquee-content img {
-    height: 60px;
+    height: 80px;
     width: auto;
-    filter: grayscale(100%);
-    opacity: 0.5;
     transition: 0.3s;
     flex-shrink: 0;
 }
-.marquee-content img:hover { filter: grayscale(0%); opacity: 1; }
+.marquee-content img:hover { opacity: 1; }
 
 @media (max-width: 480px) {
     .marquee-content { gap: 2rem; }
-    .marquee-content img { height: 40px; }
+    .marquee-content img { height: 50px; }
 }
 
 @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
