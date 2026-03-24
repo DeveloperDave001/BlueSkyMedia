@@ -16,101 +16,90 @@
 </head>
 <body>
 
-
-    <!-- Computer Header-->
     <header class="header">
-        <div class="logo-container">
-            <img src="../assets/images/BSLogo.png"  alt="Company Logo" class="Companylogo">
-            <img src="../assets/images/15th Aniversary Logo 1.3.png" alt="15th Anniversary" style="height: 50px;">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../assets/images/BSLogo.png" alt="BlueSky" class="company-logo">
+                </a>
+                <div class="anniversary-video-circle">
+                    <video autoplay loop muted playsinline>
+                        <source src="../assets/images/15th.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="About.html" class="nav-link">About Us</a></li>
+                    
+                    <li class="dropdown-trigger">
+                        <a href="#" class="nav-link">
+                            Portfolio <i class="fas fa-chevron-down chevron"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-grid">
+                                <a href="BlueSkyMediapromotions.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-bullhorn"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">Marketing Promotions</span>
+                                        <span class="dd-desc">Strategic ad placement</span>
+                                    </div>
+                                </a>
+                                <a href="PrintHouse.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-print"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">Print House</span>
+                                        <span class="dd-desc">High-quality branding</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="contact.html" class="btn-contact">
+                    <span>Start Project</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                
+                <div class="hamburger">
+                    <div class="menu-line top"></div>
+                    <div class="menu-line middle"></div>
+                    <div class="menu-line bottom"></div>
+                </div>
+            </div>
         </div>
-        <nav class="nav">
-            <ul>
-        
-
-                <Li><a href="../index.html"><img src="../assets/images/LogoIcon.png" alt="Logo" class="logo1">Home</a></Li>
-
-                <Li><a href="About.html"><img src="../assets/images/LogoIcon.png" alt="Logo" class="logo1">About Us</a></Li>
-
-                <Li><a href="#" class="have_dropdown"><img src="../assets/images/LogoIcon.png" alt="Logo" class="logo1">BlueSky Media Promotions <i class="fas fa-caret-down"></i></a>
-                
-                                
-                    <div class="dropdown_menu">
-                        <ul>
-                            <li><a href="BlueSkyMediapromotions.html">BlueSKy Media Promotions</a></li>
-                            <li><a href="PrintHouse.html">BlueSky Print House</a></li>
-                            <li><a href="../Models/index.html">BlueSky Models & Ushers</a></li>
-                            <li><a href="BlueSkyTv.html">BlueSky TV</a></li>
-                        </ul>
-                    </div>
-
-                </Li>
-
-<!--                 <Li><a href="#" class="have_dropdown"><img src="LogoIcon.png" alt="Logo" class="logo1">eCatalogue<i class="fas fa-caret-down"></i></a> -->
-                
-                                
-                    <div class="dropdown_menu">
-                        <ul>
-                            <li><a href="https://www.behance.net/gallery/221056545/BlueSky-Promotional-Items">Promotional Items</a></li>
-                            <li><a href="Models/index.html">Models & Ushers</a></li>
-                            <!-- <li><a href="Models/index.html">BlueSky Models & Ushers</a></li>
-                            <li><a href="BlueSkyTv.html">BlueSky TV</a></li> -->
-                        </ul>
-                    </div>
-
-                </Li>                  
-                <Li><a href="../Careers/careers.html"><img src="../assets/images/LogoIcon.png" alt="Logo" class="logo1">Careers</a></Li>
-                
-            </ul>
-        </nav>
     </header>
 
-    <!-- Mobile_Header -->
-    <div class="mobile">
-        
-    <div class="mobile_header_for_logo_menu">
-        <div class="mobile_logo">
-            <img src="../assets/images/BSLogo.png"  alt="">
-        </div>
-
-        <div class="menu-btn">
-            <div class="menu-icon"></div>
-        </div>
-    </div>
-
-    <header class="header_mobile">
-
-        <nav class="nav">
-            <ul>
-        
-
-                <Li><a href="../index.html">Home</a></Li>
-
-                <Li><a href="About.html">About Us</a></Li>
-
-                <Li><a href="#" class="have_dropdown">BlueSky Media Promotions<i class="fas fa-caret-down"></i></a>
-                
-                                
-                    <div class="dropdown_menu">
-                        <ul>
-
-                            <li><a href="BlueSkyMediapromotions.html">BlueSKy Media Promotions</a></li>
-                            <li><a href="PrintHouse.html">BlueSky Print House</a></li>
-                            <li><a href="../Models/index.html">BlueSky Models & Ushers</a></li>
-                            <li><a href="BlueSkyTv.html">BlueSky TV</a></li>
-                        </ul>
+    <div class="mobile-nav">
+        <div class="mobile-backdrop"></div>
+        <div class="mobile-nav-content">
+            <div class="mobile-header">
+                <span class="mobile-menu-title">Menu</span>
+                <div class="close-menu-btn"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="mobile-links-wrapper">
+                <a href="../index.html" class="mobile-link">Home</a>
+                <a href="About.html" class="mobile-link">About Us</a>
+                <div class="mobile-dropdown-container">
+                    <div class="mobile-link has-dropdown">
+                        Portfolio <i class="fas fa-plus"></i>
                     </div>
-
-                </Li>
-
-                <Li><a href="https://www.behance.net/gallery/221056545/BlueSky-Promotional-Items">eCatalogue</a></Li>
-                
-                <Li><a href="contact.html">Contact Us</a></Li>
-                
-            </ul>
-        </nav>
-    </header>
-
-
+                    <div class="mobile-sub-links">
+                        <a href="BlueSkyMediapromotions.html">Marketing Promotions</a>
+                        <a href="PrintHouse.html">Print House</a>
+                    </div>
+                </div>
+                <a href="services.html" class="mobile-link">Services</a>
+                <a href="contact.html" class="mobile-cta">Start a Project</a>
+            </div>
+        </div>
     </div>
 
 
