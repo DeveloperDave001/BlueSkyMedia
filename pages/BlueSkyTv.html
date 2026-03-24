@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueSky TV | Audio-Visual Brilliance</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="shortcut icon" href="../assets/images/LogoIcon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+    <link rel="stylesheet" href="../assets/css/tv-light.css"> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../assets/images/BSLogo.png" alt="BlueSky" class="company-logo">
+                </a>
+                <img src="../assets/images/15th Aniversary Logo 1.3.png" alt="15th Anniversary" class="anniversary-logo">
+            </div>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="About.html" class="nav-link">About Us</a></li>
+                    
+                    <li class="dropdown-trigger">
+                        <a href="#" class="nav-link">
+                            Portfolio <i class="fas fa-chevron-down chevron"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-grid">
+                                <a href="BlueSkyMediapromotions.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-bullhorn"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">Media Promotions</span>
+                                        <span class="dd-desc">Strategic ad placement</span>
+                                    </div>
+                                </a>
+                                <a href="PrintHouse.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-print"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">Print House</span>
+                                        <span class="dd-desc">Premium branding</span>
+                                    </div>
+                                </a>
+                                <a href="../Models/index.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-users"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">Models & Ushers</span>
+                                        <span class="dd-desc">Event staffing</span>
+                                    </div>
+                                </a>
+                                <a href="BlueSkyTv.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-tv"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">BlueSky TV</span>
+                                        <span class="dd-desc">Broadcast production</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="contact.html" class="btn-contact">Create Content</a>
+                <div class="hamburger">
+                    <div class="menu-line top"></div>
+                    <div class="menu-line middle"></div>
+                    <div class="menu-line bottom"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <div class="mobile-backdrop"></div>
+        <div class="mobile-nav-content">
+            <div class="mobile-header">
+                <span class="mobile-menu-title">Menu</span>
+                <div class="close-menu-btn"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="mobile-links-wrapper">
+                <a href="../index.html" class="mobile-link">Home</a>
+                <a href="About.html" class="mobile-link">About Us</a>
+                <div class="mobile-dropdown-container">
+                    <div class="mobile-link has-dropdown">
+                        Portfolio <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="mobile-sub-links">
+                        <a href="BlueSkyMediapromotions.html">Media Promotions</a>
+                        <a href="PrintHouse.html">Print House</a>
+                        <a href="../Models/index.html">Models & Ushers</a>
+                        <a href="BlueSkyTv.html">BlueSky TV</a>
+                    </div>
+                </div>
+                <a href="services.html" class="mobile-link">Services</a>
+                <a href="contact.html" class="mobile-cta">Start a Project</a>
+            </div>
+        </div>
+    </div>
+
+    <main id="smooth-wrapper">
+
+        <section class="tv-visual-banner">
+             <video autoplay loop muted playsinline class="hero-video">
+                <source src="../assets/videos/Tv3333.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section class="tv-intro-text">
+            <div class="container center">
+                <span class="hero-pill">BlueSky TV</span>
+                <h1 class="hero-title">Visual Stories, <br><span class="highlight-blue">Beautifully Told.</span></h1>
+                <p class="hero-desc">
+                    Captivating content and immersive entertainment. Your one-stop hub for audio-visual brilliance that connects with audiences globally.
+                </p>
+                <div class="hero-btns">
+                    <a href="#shows" class="btn-primary">
+                        <span>Explore Verticals</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <a href="contact.html" class="btn-secondary">
+                        <span>Start Production</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="shows" class="showcase-section">
+            <div class="container">
+                <div class="section-header center mb-5">
+                    <span class="section-tag">Production</span>
+                    <h2 class="big-heading">Our Content Verticals</h2>
+                </div>
+
+                <div class="tv-grid">
+                    
+                    <div class="tv-card reveal-card">
+                        <div class="card-thumb">
+                            <img src="../assets/images/MUISC PRO.jpg" alt="Music Production">
+                            <div class="card-icon-overlay"><i class="fas fa-music"></i></div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Music</h3>
+                            <p>Original tracks, live performances, and artist interviews creating a vibrant platform for talent.</p>
+                            <span class="card-link">Learn More <i class="fas fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="tv-card reveal-card">
+                        <div class="card-thumb">
+                            <img src="../assets/images/DRAMA.jpg" alt="Drama Production">
+                            <div class="card-icon-overlay"><i class="fas fa-theater-masks"></i></div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Drama</h3>
+                            <p>Emotionally compelling short films and web series that spark conversations.</p>
+                            <span class="card-link">Learn More <i class="fas fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="tv-card reveal-card">
+                        <div class="card-thumb">
+                            <img src="../assets/images/DANCE.jpg" alt="Dance Showcase">
+                            <div class="card-icon-overlay"><i class="fas fa-running"></i></div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Dance</h3>
+                            <p>Celebrating movement through choreographed performances and cultural showcases.</p>
+                            <span class="card-link">Learn More <i class="fas fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="tv-card reveal-card">
+                        <div class="card-thumb">
+                            <img src="../assets/images/comedy.jpg" alt="Comedy">
+                            <div class="card-icon-overlay"><i class="fas fa-laugh-beam"></i></div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Comedy</h3>
+                            <p>Skits, stand-up acts, and humorous series that bring everyday stories to life.</p>
+                            <span class="card-link">Learn More <i class="fas fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="tv-card reveal-card">
+                        <div class="card-thumb">
+                            <img src="../assets/images/MAGIC.jpg" alt="Magic Shows">
+                            <div class="card-icon-overlay"><i class="fas fa-hat-wizard"></i></div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Magic & Illusion</h3>
+                            <p>Mind-blowing tricks and storytelling flair featuring illusionists and street magicians.</p>
+                            <span class="card-link">Learn More <i class="fas fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-cta-section">
+                    <h2 class="cta-heading">Ready to Air? <br>Contact Us.</h2>
+                    <a href="contact.html" class="big-arrow-btn">
+                        <span class="btn-text">Get in Touch</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-content-grid">
+                    <div class="footer-col brand-col">
+                        <img src="../assets/images/BSLogo.png" alt="BlueSky" class="footer-logo">
+                        <p class="footer-desc">Redefining entertainment and media production in Africa.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-label">Explore</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="About.html">About Us</a></li>
+                            <li><a href="../Careers/careers.html">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-label">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="BlueSkyMediapromotions.html">Media Promotions</a></li>
+                            <li><a href="PrintHouse.html">Print House</a></li>
+                            <li><a href="../Models/index.html">Models & Ushers</a></li>
+                            <li><a href="BlueSkyTv.html">BlueSky TV</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col contact-col">
+                        <h4 class="footer-label">Connect</h4>
+                        <a href="https://linktr.ee/blueskymediapromotions" target="_blank" class="social-link-item">
+                            <i class="fas fa-share-alt"></i> Linktree
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Ⓒ 2025 BlueSky Media Promotions. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="../assets/js/style.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.from(".reveal-card", {
+                scrollTrigger: { trigger: ".tv-grid", start: "top 80%" },
+                y: 60, opacity: 0, duration: 0.8, stagger: 0.15, ease: "power2.out"
+            });
+            gsap.from(".hero-content", { y: 30, opacity: 0, duration: 1, delay: 0.2 });
+        });
+    </script>
+</body>
+</html>

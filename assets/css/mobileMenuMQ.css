@@ -1,0 +1,264 @@
+@media screen and  (width <= 885px){
+    body{
+        overflow-x: hidden;
+        position: relative;
+      }
+
+.mobile{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    z-index: 9999;
+}
+
+    .mobile_header_for_logo_menu{
+        background-color: transparent;
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        padding: 10px 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu-btn{
+        width: 60px;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s all;
+        -webkit-transition: .3s all;
+        -moz-transition: .3s all;
+        -ms-transition: .3s all;
+        -o-transition: .3s all;
+        position: relative;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+.menu-icon, .menu-icon::before, .menu-icon::after{
+width: 30px;
+height: 3px;
+background-color: var(--WhiBg);
+position: absolute;
+transition: .3s all;
+z-index: 9999;
+}
+
+.menu-icon::before, .menu-icon::after{
+    content: "";
+}
+
+.menu-icon::before{
+    transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);
+    -moz-transform: translate(0px, 10px);
+    -ms-transform: translate(0px, 10px);
+    -o-transform: translate(0px, 10px);
+}
+.menu-icon::after{
+    transform: translate(-0px, -10px);
+    -webkit-transform: translate(-0px, -10px);
+    -moz-transform: translate(-0px, -10px);
+    -ms-transform: translate(-0px, -10px);
+    -o-transform: translate(-0px, -10px);
+}
+
+    .mobile_logo{
+        width: 100%;
+    }
+    .mobile_logo img{
+        width: 100px;
+    }
+
+    .header{
+        display: none;
+       
+    }
+
+    .header_mobile{
+        background-color: var(--WhiBg);
+        position: absolute;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        padding: 20px 0px;
+        transition: .3s all;
+        -webkit-transition: .3s all;
+        -moz-transition: .3s all;
+        -ms-transition: .3s all;
+        -o-transition: .3s all;
+
+}
+
+    .header_mobile nav{
+        height: 100%;
+    }
+    .header_mobile nav ul{
+    
+        display: flex;
+        height: 100%;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropdown_menu{
+        width: 400px;
+        z-index: 3;
+        transform: translate(-400px, -100px);
+        -webkit-transform: translate(-400px, -100px);
+        -moz-transform: translate(-400px, -100px);
+        -ms-transform: translate(-400px, -100px);
+        -o-transform: translate(-400px, -100px);
+        border-radius: 10px 0px 10px 0px;
+        -webkit-border-radius: 10px 0px 10px 0px;
+        -moz-border-radius: 10px 0px 10px 0px;
+        -ms-border-radius: 10px 0px 10px 0px;
+        -o-border-radius: 10px 0px 10px 0px;
+    }
+    .dropdown_menu ul li{
+        width: 100%;
+    }
+    .header_mobile nav ul a{
+        font-size: 20px;
+    }
+    .header_mobile nav ul a:hover{
+        font-size: 20px;
+        color: var(--textColor);
+    }
+.dropdown_menu ul{
+        gap: 10px;
+}
+
+:is(.mobile:hover, .mobile:focus-within) .menu-icon{
+    background-color: transparent;
+
+}
+:is(.mobile:hover, .mobile:focus-within) .menu-icon::before{
+    transform: translate(0px) rotate(-45deg);
+    -webkit-transform: translate(0px) rotate(-45deg);
+    -moz-transform: translate(0px) rotate(-45deg);
+    -ms-transform: translate(0px) rotate(-45deg);
+    -o-transform: translate(0px) rotate(-45deg);
+    background-color: var(--priColor);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+:is(.mobile:hover, .mobile:focus-within) .menu-icon::after{
+    transform: translate(0px) rotate(45deg);
+    -webkit-transform: translate(0px) rotate(45deg);
+    -moz-transform: translate(0px) rotate(45deg);
+    -ms-transform: translate(0px) rotate(45deg);
+    -o-transform: translate(0px) rotate(45deg);
+    background-color: var(--priColor);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+:is(.mobile:hover, .mobile:focus-within) .menu-btn{
+    transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    background-color: transparent;
+}
+:is(.mobile:hover, .mobile:focus-within) .header_mobile{
+    display: flex;
+
+}
+
+}
+
+@media screen and  (width<=800px){
+.dropdown_menu{
+    width: 400px;
+    z-index: 3;
+    transform: translate(-400px, -100px);
+    -webkit-transform: translate(-400px, -100px);
+    -moz-transform: translate(-400px, -100px);
+    -ms-transform: translate(-400px, -100px);
+    -o-transform: translate(-400px, -100px);
+    border-radius: 10px 0px 10px 0px;
+    -webkit-border-radius: 10px 0px 10px 0px;
+    -moz-border-radius: 10px 0px 10px 0px;
+    -ms-border-radius: 10px 0px 10px 0px;
+    -o-border-radius: 10px 0px 10px 0px;
+}
+}
+
+@media screen and (width <= 640px){
+    .dropdown_menu{
+        width: 350px;
+        transform: translate(-340px, -100px);
+        -webkit-transform: translate(-340px, -100px);
+        -moz-transform: translate(-340px, -100px);
+        -ms-transform: translate(-340px, -100px);
+        -o-transform: translate(-340px, -100px);
+}
+.dropdown_menu ul li a{
+    font-size: 18px;
+}
+}  
+
+@media screen and (width <= 500px){
+    .header_mobile{
+        width: 350px;
+    }
+    .dropdown_menu{
+        width: 350px;
+        transform: translate(-50px, 10px);
+        -webkit-transform: translate(-50px, 10px);
+        -moz-transform: translate(-50px, 10px);
+        -ms-transform: translate(-50px, 10px);
+        -o-transform: translate(-50px, 10px);
+        background-color: var(--BlaGB);
+}
+}
+
+@media screen and (width <= 523px){
+    .mobile_header_for_logo_menu{
+        padding: 1vw 4vw;
+    }
+}
+@media screen and (width <= 480px){
+.header_mobile{
+    height: 55vh;
+    width: 250px;
+}
+.header_mobile ul li a{
+    font-size: 16px;
+}
+.dropdown_menu{
+    width: 350px;
+    transform: translate(-50px, 10px);
+    -webkit-transform: translate(-50px, 10px);
+    -moz-transform: translate(-50px, 10px);
+    -ms-transform: translate(-50px, 10px);
+    -o-transform: translate(-50px, 10px);
+    background-color: var(--BlaGB);
+}
+}
+
+
+ 
+ 

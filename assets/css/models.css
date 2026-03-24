@@ -1,0 +1,262 @@
+/* =========================================
+   BlueSky Group | Models & Ushers Styles
+   ========================================= */
+
+/* --- 1. Models Hero Section --- */
+.models-hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slide-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center top;
+    opacity: 0.6;
+    animation: zoomEffect 20s infinite alternate;
+}
+
+@keyframes zoomEffect {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8));
+    z-index: 1;
+}
+
+.hero-tag {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #c5a059; /* Gold accent */
+    padding-bottom: 5px;
+    color: #c5a059;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif; /* Elegant Serif Font */
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.highlight-gold { color: #c5a059; font-style: italic; }
+
+.hero-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: #e2e8f0;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.btn-primary {
+    background: #c5a059;
+    color: white;
+    padding: 0.9rem 2.2rem;
+    border-radius: 0; /* Sharp corners for fashion feel */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.btn-primary:hover { background: #b08d4b; }
+
+.btn-outline-white {
+    border: 1px solid white;
+    color: white;
+    padding: 0.9rem 2.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.btn-outline-white:hover { background: white; color: black; }
+
+.scroll-line {
+    position: absolute;
+    bottom: 0; left: 50%;
+    width: 1px; height: 80px;
+    background: rgba(255,255,255,0.3);
+    z-index: 10;
+}
+
+/* --- 2. Services Grid --- */
+.services-section {
+    background: #fff;
+    padding: 8rem 0;
+}
+
+.talent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.talent-card {
+    position: relative;
+    group-hover: translateY(-10px);
+}
+
+.card-image {
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.card-image img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.6s ease;
+    filter: grayscale(20%);
+}
+
+.talent-card:hover .card-image img {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+.card-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.card-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* --- 3. Why Us Split Section --- */
+.why-us-section {
+    background: #f9f9f9;
+    padding: 8rem 0;
+}
+
+.grid-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.section-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.check-list li {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.check-list i { color: #c5a059; }
+
+.stacked-images { position: relative; }
+
+.img-main {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 20px 20px 0px rgba(197, 160, 89, 0.2); /* Gold shadow */
+}
+
+.accent-box {
+    position: absolute;
+    bottom: -30px; left: -30px;
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+}
+
+.accent-num {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c5a059;
+}
+
+.accent-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+/* --- 4. CTA Banner --- */
+.cta-banner {
+    position: relative;
+    padding: 10rem 0;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+.cta-bg-image {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    filter: brightness(0.4);
+}
+.cta-title { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 2rem; color: white; }
+
+.cta-buttons{
+    /* border: 2px solid white; */
+    width: fit-content;
+    display: inline-flex;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .grid-split { grid-template-columns: 1fr; gap: 3rem; }
+    .hero-title { font-size: 3.5rem; }
+    .card-image { height: 350px; }
+    .accent-box { left: 0; bottom: -20px; }
+}

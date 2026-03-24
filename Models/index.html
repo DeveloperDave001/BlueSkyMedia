@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models & Ushers | BlueSky Media Promotions</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="shortcut icon" href="../assets/images/LogoIcon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+    <link rel="stylesheet" href="../assets/css/models.css"> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../assets/images/BSLogo.png" alt="BlueSky" class="company-logo">
+                </a>
+                <img src="../assets/images/15th Aniversary Logo 1.3.png" alt="15th Anniversary" class="anniversary-logo">
+            </div>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../pages/About.html" class="nav-link">About Us</a></li>
+                    
+                    <li class="dropdown-trigger">
+                        <a href="#" class="nav-link">
+                            Portfolio <i class="fas fa-chevron-down chevron"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-grid">
+                                <a href="../pages/BlueSkyMediapromotions.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-bullhorn"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">Media Promotions</span>
+                                        <span class="dd-desc">Strategic ad placement</span>
+                                    </div>
+                                </a>
+                                <a href="../pages/PrintHouse.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-print"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">Print House</span>
+                                        <span class="dd-desc">Premium branding</span>
+                                    </div>
+                                </a>
+                                <a href="index.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-users"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">Models & Ushers</span>
+                                        <span class="dd-desc">Event staffing</span>
+                                    </div>
+                                </a>
+                                <a href="../pages/BlueSkyTv.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-tv"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">BlueSky TV</span>
+                                        <span class="dd-desc">Broadcast production</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li><a href="../pages/services.html" class="nav-link">Services</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="../pages/contact.html" class="btn-contact">Let's Talk</a>
+                <div class="hamburger">
+                    <div class="menu-line top"></div>
+                    <div class="menu-line middle"></div>
+                    <div class="menu-line bottom"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <div class="mobile-backdrop"></div>
+        <div class="mobile-nav-content">
+            <div class="mobile-header">
+                <span class="mobile-menu-title">Menu</span>
+                <div class="close-menu-btn"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="mobile-links-wrapper">
+                <a href="../index.html" class="mobile-link">Home</a>
+                <a href="../pages/About.html" class="mobile-link">About Us</a>
+                <div class="mobile-dropdown-container">
+                    <div class="mobile-link has-dropdown">
+                        Portfolio <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="mobile-sub-links">
+                        <a href="../pages/BlueSkyMediapromotions.html">Media Promotions</a>
+                        <a href="../pages/PrintHouse.html">Print House</a>
+                        <a href="index.html">Models & Ushers</a>
+                        <a href="../pages/BlueSkyTv.html">BlueSky TV</a>
+                    </div>
+                </div>
+                <a href="../pages/services.html" class="mobile-link">Services</a>
+                <a href="../pages/contact.html" class="mobile-cta">Start a Project</a>
+            </div>
+        </div>
+    </div>
+
+    <main id="smooth-wrapper">
+
+        <section class="models-hero">
+            <div class="hero-bg-slider">
+                <div class="slide-bg active" style="background-image: url('../assets/images/MODELS&USHHERS.jpg');"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            
+            <div class="container relative z-10 center">
+                <span class="hero-tag">BlueSky Talent</span>
+                <h1 class="hero-title">Elegance in <br><span class="highlight-gold">Motion.</span></h1>
+                <p class="hero-desc">
+                    Connecting brands with professional models and ushers who embody grace, style, and excellence for every occasion.
+                </p>
+                <div class="hero-btns">
+                    <a href="#services" class="btn-primary">Explore Services</a>
+                    <a href="../pages/contact.html" class="btn-outline-white">Join Our Agency</a>
+                </div>
+            </div>
+            
+            <div class="scroll-line"></div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header center mb-5">
+                    <span class="pill-badge">Our Expertise</span>
+                    <h2 class="big-heading">Professional Talent Services</h2>
+                </div>
+
+                <div class="talent-grid">
+                    
+                    <div class="talent-card reveal-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop" alt="Fashion Model">
+                        </div>
+                        <div class="card-content">
+                            <h3>Fashion Models</h3>
+                            <p>Top-tier runway and commercial models for fashion shows, lookbooks, and brand campaigns.</p>
+                        </div>
+                    </div>
+
+                    <div class="talent-card reveal-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1000&auto=format&fit=crop" alt="Event Ushers">
+                        </div>
+                        <div class="card-content">
+                            <h3>Event Ushers</h3>
+                            <p>Professional, well-groomed ushers to manage guests and add a touch of class to your corporate or social events.</p>
+                        </div>
+                    </div>
+
+                    <div class="talent-card reveal-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop" alt="Brand Ambassadors">
+                        </div>
+                        <div class="card-content">
+                            <h3>Brand Ambassadors</h3>
+                            <p>Charismatic faces to represent your brand at activations, product launches, and trade shows.</p>
+                        </div>
+                    </div>
+
+                    <div class="talent-card reveal-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1000&auto=format&fit=crop" alt="Commercial Faces">
+                        </div>
+                        <div class="card-content">
+                            <h3>Commercial Faces</h3>
+                            <p>Diverse talent for TV commercials, billboards, and digital advertising campaigns.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us-section">
+            <div class="container grid-split">
+                <div class="text-side">
+                    <h2 class="section-title">The BlueSky Standard</h2>
+                    <p class="section-desc">
+                        We don't just provide faces; we provide professionals. Our rigorous selection process ensures that every model and usher we deploy is trained in etiquette, poise, and brand representation.
+                    </p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check-circle"></i> Professionally Trained</li>
+                        <li><i class="fas fa-check-circle"></i> Punctual & Reliable</li>
+                        <li><i class="fas fa-check-circle"></i> Diverse Talent Pool</li>
+                    </ul>
+                    <a href="../pages/contact.html" class="btn-primary mt-4">Book Now</a>
+                </div>
+                <div class="image-side">
+                    <div class="stacked-images">
+                        <img src="../assets/images/MODELS&USHHERS.jpg" class="img-main" alt="Models Group">
+                        <div class="accent-box">
+                            <span class="accent-num">500+</span>
+                            <span class="accent-label">Events Managed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="cta-bg-image" style="background-image: url('../assets/images/bg2.jpg.jpeg');"></div>
+            <div class="cta-overlay"></div>
+            <div class="container relative z-10 center">
+                <h2 class="cta-title">Need the perfect face for your brand?</h2>
+                <div class="cta-buttons">
+                    <a href="../pages/contact.html" class="btn-contact large">
+                        <span>Contact Agency</span>
+                        <i class="fas fa-star"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-cta-section">
+                    <h2 class="cta-heading">Ready to book? <br>Let's Talk.</h2>
+                    <a href="../pages/contact.html" class="big-arrow-btn">
+                        <span class="btn-text">Get in Touch</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-content-grid">
+                    <div class="footer-col brand-col">
+                        <img src="../assets/images/BSLogo.png" alt="BlueSky" class="footer-logo">
+                        <p class="footer-desc">Professional Modeling & Ushering Management.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-label">Explore</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../pages/About.html">About Us</a></li>
+                            <li><a href="../Careers/careers.html">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-label">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="../pages/BlueSkyMediapromotions.html">Media Promotions</a></li>
+                            <li><a href="../pages/PrintHouse.html">Print House</a></li>
+                            <li><a href="index.html">Models & Ushers</a></li>
+                            <li><a href="../pages/BlueSkyTv.html">BlueSky TV</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col contact-col">
+                        <h4 class="footer-label">Connect</h4>
+                        <a href="https://linktr.ee/blueskymediapromotions" target="_blank" class="social-link-item">
+                            <i class="fas fa-share-alt"></i> Linktree
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Ⓒ 2025 BlueSky Media Promotions. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="../assets/js/style.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            gsap.registerPlugin(ScrollTrigger);
+            
+            // Staggered Reveal for Cards
+            gsap.from(".reveal-card", {
+                scrollTrigger: { trigger: ".talent-grid", start: "top 80%" },
+                y: 50, opacity: 0, duration: 0.8, stagger: 0.15, ease: "power2.out"
+            });
+
+            // Hero Animation
+            gsap.from(".hero-title", { y: 30, opacity: 0, duration: 1, delay: 0.2 });
+            gsap.from(".hero-desc", { y: 20, opacity: 0, duration: 1, delay: 0.4 });
+        });
+    </script>
+</body>
+</html>

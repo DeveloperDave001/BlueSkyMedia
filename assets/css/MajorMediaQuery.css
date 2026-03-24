@@ -1,0 +1,456 @@
+:root {
+    --priColor: #00a3e0;
+    --priColor2: #9e9e9e;
+    --priColorFade: #00a3e0;
+    --secColor: #ffffff;
+    --textColor: #ffffff;
+    --textColorw:#ffffff;
+    --bgColor: #f5f5f5;
+    --BlaGB: #030303;
+    --WhiBg: #ffffff;
+}
+
+
+
+@media only screen and (width <= 1300px) {
+
+    .catchPhrase p{
+        font-size: 20px;
+    }
+ 
+
+    .hero2{
+        height: 90vh;
+        margin-bottom: 0;
+    }
+
+    .About p{
+        font-size: 18px;
+    }
+    .clients p{
+        font-size: 14px;
+    }
+    .cardInfo h1{
+        font-size: 20px;
+    }
+    .cardInfo{
+        height:60%;
+    }
+    .disclaimer p{
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (width <= 1110px) {
+    .catchPhrase{
+     margin-top: 100px;
+    }
+    .catchPhrase p{
+     font-size: 16px;
+    }
+     .GeneralButton {
+         width: 250px;
+     }
+ 
+     .hero2{
+         height:75vh;
+     }
+ 
+     .cardInfo{
+         height:60%;
+     }
+     .cardInfo div h1{
+         font-size:18px;
+         text-align: center;
+     }
+     .cardInfo div p{
+         font-size:16px;
+         text-align: center;
+     }
+ } 
+
+ @media only screen and (width <= 1080px){
+#final_hero{
+    height: 70vh;
+}
+ }
+
+ @media only screen and (width <= 1024px){
+    .clients img{
+        width: 10vw;
+    }
+    .clients p{
+        font-size: 14px;
+    }
+    .cardInfo div h1{
+        font-size: 16px;
+}
+.cardInfo div p{
+    font-size: 14px;
+}
+
+    #socials{
+        font-size: 12px;
+    } 
+
+    .see_ecatalogue_img{
+        width: 45%;
+    }
+    .see_ecatalogue h1{
+        font-size: 12vh;
+
+    }
+
+} 
+
+
+
+ @media screen and (width <= 1000px){
+.catchPhrase{
+    margin-top: 23vw;
+    height: 100%;
+    padding: 0;
+}
+.catchPhrase h1{
+    margin-bottom: 20px;
+    padding: 0;
+}
+.subAction{
+    width:90%;
+}
+
+.hero2{
+    height:70vh;
+}
+.About p{
+    font-size: 16px;
+}
+
+.clients p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.cardinfo{
+    height:60%;
+}
+.cardInfo h1 {
+    font-size: 18px;
+}
+.cardInfo p {
+    font-size: 12px;
+}
+.header{
+    display: flex;
+    
+}
+.disclaimer_text{
+    text-align: center;
+    font-size: .9vw;
+}
+    
+} 
+
+ @media only screen and (width <= 980px){
+.header nav ul li a{
+    font-size: 12px;
+}
+
+.header nav ul li a img{
+    width: 10px;
+}
+.final_hero .GeneralButton{
+    height: 10vh;
+    font-size: 20px;
+}
+} 
+
+ @media only screen and (width <= 990px){
+.hero2{
+    height: 70vh;
+}
+.clients p{
+    font-size: 12px;
+}
+.cardInfo h1{
+    font-size: 20px;
+}
+.cardInfo p{
+    font-size: 13px;
+}
+
+.cardInfo .GeneralButton{
+    width: 130px;
+
+}
+.cardInfo .GeneralButton img{
+    display: none;
+}
+}
+
+
+
+@media screen and  (width <= 885px){
+.hero1{
+    height: 100vh;
+}
+.catchPhrase{
+    height: 80%;
+    align-items: start;
+    justify-content: start;
+
+}
+.catchPhrase h1{
+    font-size: 8vw;
+}
+.subAction{
+    flex-flow: column wrap;
+    gap: 10px;
+    align-items: start;
+    justify-content: start;
+}
+.subAction p{
+    width:100%;
+    font-size: 16px;
+}
+.subAction a{
+    margin-top: 5px;
+}
+
+.hero2{
+    padding: 2vw 5vw;
+    height: 60vh;
+}
+.hero4{
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    
+}
+.clients {
+    flex: 1 1 calc(50% - 20vw); 
+    height: auto;
+}
+.clients img{
+    width: 15vw;
+}
+
+
+.hero5{
+    display: none;
+}
+.eCatalogue_pics{
+    flex: 0;
+    display: none;
+}
+.final_hero{
+    height: 25vh;
+}
+
+.break{
+    height: 70px;
+}
+.eCatalogue-Slides{
+    margin-top: -10px;
+}
+}
+@media screen and (width <= 840px){
+    .catchPhrase{
+        margin-top: 50px;
+    }
+    .GeneralButton{
+        height: 55px;
+    }
+    .hero3{
+        height: 14vh;
+    }
+    .sideEffect{
+        height: 100%;
+    }
+    .hero4Heading p{
+        text-align: center;
+    }
+    .clients {
+        flex: 1 1 calc(50% - 20vw); 
+        height: 15vw;
+        padding:20px;
+    }
+    
+    .clients p{
+        font-size: 16px;
+    }
+    #final_hero{
+        height: 40vh;
+
+    }
+    .final_hero h1{
+        font-size: 7vw;
+    }
+    .clients{
+    padding: 0;
+    height: 30vh;
+    }
+    .clients img{
+        width: 80%;
+    }
+    } 
+
+
+
+@media screen and (width <= 750px){
+    .hero1{
+        height: 80vh;
+    }
+    .hero2{
+        flex-flow: column wrap;
+        height: 130vh;
+        gap: 20px;
+
+   }
+     .About{
+        flex: 0;
+        order: 2;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        
+    }
+    .AboutImg{
+        width: 100%;
+        height: 100vh;
+
+    }
+    .AboutImg .slider{
+        height: 90%;
+    }
+    .About p{
+        font-size: 18px;
+    }
+    .GeneralButton{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+
+    }
+    .GeneralButton img{
+        display: none;
+    }
+  
+ 
+}
+
+
+  @media screen and (width <= 640px){
+
+    .see_ecatalogue h1{
+        font-size: 8vh;
+}  
+  }
+  @media screen and (width <= 600px){
+    
+
+    .see_ecatalogue h1{
+        font-size: 7vh;
+}  
+
+.final_hero .GeneralButton{
+    width: 100%;
+    font-size: 25px;
+}
+  }
+
+ @media screen and (width <= 560px){
+.hero1{
+    height: 90vh;
+    background-size: 115%;
+}
+
+.catchPhrase h1{
+    margin-bottom: -4px;
+}
+.hero2{
+    height:120vh ;
+}
+.About{
+    margin-bottom: 10px;
+}
+.About p{
+    font-size: 16px;
+}
+.hero4Heading p{
+font-size: 16px;
+}
+
+} 
+@media screen and (width <= 500px){
+#final_hero{
+    height: 40vh;
+}
+.see_ecatalogue h1{
+    font-size: 5vh;
+} 
+
+}
+
+ @media screen and (width <= 523px){
+    .hero1{
+    height: 85vh;
+    }
+    .catchPhrase{
+        width: 90%;
+        margin-left: 10px;
+    }
+}
+ 
+ @media screen and (width <= 480px){
+    .hero1{
+        height: 55vh;
+        background: linear-gradient(90deg, #02292bea, #3a3a3a80);
+
+    }
+    .subAction p{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+.hero2{
+    height: 95vh;
+}
+.AboutImg{
+    border: none;
+}
+.About p{
+    font-size: 15px;
+    padding: 0px 20px;
+}
+
+.About{
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.hero3{
+    height: 60px;
+}
+.sideEffect{
+    height: 100%;
+    background-color: #ffffffd8;
+}
+.eCatalogue-SlidesBreak{
+    height: 10vh;
+}
+.break{
+    height: 70%;
+}
+.clients {
+    flex: 1 1 calc(50% - 20vw); 
+}
+.clients p{
+    font-size: 15px;
+
+}
+#final_hero{
+    height: 35vh;
+}
+}

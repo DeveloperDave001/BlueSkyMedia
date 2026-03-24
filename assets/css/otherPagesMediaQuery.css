@@ -1,0 +1,348 @@
+:root {
+    --priColor: #00a3e0;
+    --priColor2: #9e9e9e;
+    --priColorFade: #00a3e0;
+    --secColor: #ffffff;
+    --textColor: #ffffff;
+    --textColorw:#ffffff;
+    --bgColor: #f5f5f5;
+    --BlaGB: #030303;
+    --WhiBg: #ffffff;
+    --white-light:#1b1b1b;
+    --btnNavtext: #00a3e0; 
+    --smallText: #ffffff; 
+    --headerTextColor:#00a3e0;
+}
+
+@media only screen and (width <= 1400px) {
+
+    .discalaimer{
+        display: none;
+    }
+
+.hero2{
+height:60vh ;
+}
+
+.GeneralButton{
+    height: 3vw;
+    width: 18vw;
+}
+
+}
+
+@media only screen and (width <= 1200px) {
+.hero2{
+height:70vh ;
+}
+
+}
+@media only screen and (width <= 1000px) {
+.hero2{
+height:60vh ;
+}
+.GeneralButton{
+    height: 4.5vw;
+}
+}
+@media only screen and (width <= 950px) {
+.hero2{
+height:120vh ;
+display: flex;
+flex-flow: column wrap;
+}
+.About{
+    order: 2;
+    flex: 0;
+}
+.AboutImg{
+   width: 100%;
+    height: 30%;
+    border: none;
+}
+.hero2:hover .AboutImg{
+    box-shadow: #03030300 10px 10px 5px;
+}
+.GeneralButton{
+    height: 4.5vw;
+    width: 25vw;
+}
+}
+
+
+@media only screen and (width <= 885px){
+    /* Mobile Header */
+    .mobile{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        z-index: 9999;
+    }
+    
+        .mobile_header_for_logo_menu{
+            background-color: transparent;
+            width: 100%;
+            height: 80px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .menu-btn{
+            width: 60px;
+            height: 100%;
+            background-color: transparent;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .3s all;
+            -webkit-transition: .3s all;
+            -moz-transition: .3s all;
+            -ms-transition: .3s all;
+            -o-transition: .3s all;
+            position: relative;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+    }
+    .menu-icon, .menu-icon::before, .menu-icon::after{
+    width: 30px;
+    height: 3px;
+    background-color: var(--priColor);
+    position: absolute;
+    transition: .3s all;
+    }
+    
+    .menu-icon::before, .menu-icon::after{
+        content: "";
+    }
+    
+    .menu-icon::before{
+        transform: translate(0px, 10px);
+        -webkit-transform: translate(0px, 10px);
+        -moz-transform: translate(0px, 10px);
+        -ms-transform: translate(0px, 10px);
+        -o-transform: translate(0px, 10px);
+    }
+    .menu-icon::after{
+        transform: translate(-0px, -10px);
+        -webkit-transform: translate(-0px, -10px);
+        -moz-transform: translate(-0px, -10px);
+        -ms-transform: translate(-0px, -10px);
+        -o-transform: translate(-0px, -10px);
+    }
+    
+        .mobile_logo{
+            width: 100%;
+        }
+        .mobile_logo img{
+            width: 100px;
+        }
+    
+        .header{
+            display: none;
+           
+        }
+    
+        .header_mobile{
+            background-color: var(--WhiBg);
+            position: absolute;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            padding: 20px 0px;
+            transition: .3s all;
+            -webkit-transition: .3s all;
+            -moz-transition: .3s all;
+            -ms-transition: .3s all;
+            -o-transition: .3s all;
+    
+    }
+    
+        .header_mobile nav{
+            height: 100%;
+        }
+        .header_mobile nav ul{
+        
+            display: flex;
+            height: 100%;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .dropdown_menu{
+            width: 300px;
+        }
+        .dropdown_menu ul li{
+            width: 100%;
+        }
+        .header_mobile nav ul a{
+            font-size: 22px;
+        }
+        .header_mobile nav ul a:hover{
+            font-size: 20px;
+            color: var(--textColor);
+        }
+    
+      
+        .dropdown_menu{
+            z-index: 3;
+            transform: translate(-300px, -100px);
+            -webkit-transform: translate(-300px, -100px);
+            -moz-transform: translate(-300px, -100px);
+            -ms-transform: translate(-300px, -100px);
+            -o-transform: translate(-300px, -100px);
+            border-radius: 10px 0px 10px 0px;
+            -webkit-border-radius: 10px 0px 10px 0px;
+            -moz-border-radius: 10px 0px 10px 0px;
+            -ms-border-radius: 10px 0px 10px 0px;
+            -o-border-radius: 10px 0px 10px 0px;
+    }
+    
+    .dropdown_menu ul{
+            gap: 10px;
+    }
+    
+    :is(.mobile:hover, .mobile:focus-within) .menu-icon{
+        background-color: transparent;
+    
+    }
+    :is(.mobile:hover, .mobile:focus-within) .menu-icon::before{
+        transform: translate(0px) rotate(-45deg);
+        -webkit-transform: translate(0px) rotate(-45deg);
+        -moz-transform: translate(0px) rotate(-45deg);
+        -ms-transform: translate(0px) rotate(-45deg);
+        -o-transform: translate(0px) rotate(-45deg);
+        box-shadow: #fff 0px 0px 10px, #fff 0px 0px 30px;;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    :is(.mobile:hover, .mobile:focus-within) .menu-icon::after{
+        transform: translate(0px) rotate(45deg);
+        -webkit-transform: translate(0px) rotate(45deg);
+        -moz-transform: translate(0px) rotate(45deg);
+        -ms-transform: translate(0px) rotate(45deg);
+        -o-transform: translate(0px) rotate(45deg);
+        box-shadow: #fff 0px 0px 10px, #fff 0px 0px 30px;;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    :is(.mobile:hover, .mobile:focus-within) .menu-btn{
+        transform: rotate(720deg);
+        -webkit-transform: rotate(720deg);
+        -moz-transform: rotate(720deg);
+        -ms-transform: rotate(720deg);
+        -o-transform: rotate(720deg);
+        background-color: transparent;
+    }
+    :is(.mobile:hover, .mobile:focus-within) .header_mobile{
+        display: flex;
+    
+    }
+
+    .GeneralButton img{
+        display: none;
+    }
+    .GeneralButton{
+        height: 6vw;
+    }
+    .hero2{
+        border: var(--priColor) solid 1px;
+        height: 110vh;
+    }
+    .hero2 img{
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+    .hero2:hover .AboutImg{
+        border: none;
+    }
+    .hero3{
+        height: 15vh;
+    }
+
+}
+
+@media only screen and (width <= 767px){
+.hero2{
+    height: 100vh;
+}
+}
+
+@media only screen and (width <= 650px){
+    .GeneralButton{
+        width: 40vw;
+        height: 8vw;
+    }
+}
+
+@media only screen and (width <= 650px){
+    .mobile_header_for_logo_menu{
+        padding: 0px px;
+    }
+    .about-header{
+        height: 20vh;
+    }
+    .about-header p{
+        padding-top: 30px; 
+        font-size: 8vw;
+    }
+    .GeneralButton{
+        width: 100%;
+        height:10vw;
+    }
+    .About p{
+        font-size: 16px;
+    }
+    .hero3{
+        height: 10vh;
+    }
+}
+
+@media only screen and (width <= 600px){
+.hero2{
+    height: 90vh;
+}
+.footer .GeneralButton{
+    width: 100%;
+    margin-left: 20px;
+}
+}
+@media only screen and (width <= 500px){
+.hero2{
+    height: 80vh;
+}
+.hero2 .AboutImg .slider .slides .slide{
+    margin-bottom: -20px;
+}
+
+.footer .GeneralButton{
+    width: 100%;
+    margin-left: 20px;
+}
+}
+
+
+

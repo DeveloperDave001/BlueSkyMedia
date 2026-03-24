@@ -1,0 +1,197 @@
+/* =========================================
+   BlueSky Group | Contact Page Styles
+   ========================================= */
+
+/* --- 1. Hero Section --- */
+.contact-hero {
+    padding: 200px 0 80px;
+    background-color: #f8fafc;
+    text-align: center;
+}
+
+.hero-pill {
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0066cc;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.hero-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.1;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.highlight-blue { color: #0066cc; }
+
+.hero-desc {
+    font-size: 1.15rem;
+    color: #64748b;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- 2. Contact Grid --- */
+.contact-grid-section {
+    padding-bottom: 8rem;
+    background: #f8fafc;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    background: white;
+    border-radius: 24px;
+    padding: 4rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+/* Info Side */
+.side-title {
+    font-size: 1.5rem;
+    color: #0f172a;
+    margin-bottom: 2rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.info-card {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-icon {
+    width: 50px; height: 50px;
+    background: #f0f9ff;
+    color: #0066cc;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.info-text h4 {
+    font-size: 1.1rem;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.info-text p, .info-text a {
+    color: #64748b;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.info-text a:hover { color: #0066cc; }
+
+.social-block { margin-top: 3rem; }
+.social-block h4 { margin-bottom: 1rem; color: #0f172a; }
+
+.social-icons { display: flex; gap: 1rem; }
+.social-icons a {
+    width: 40px; height: 40px;
+    border: 1px solid #e2e8f0;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #64748b;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    background: #0066cc;
+    color: white;
+    border-color: #0066cc;
+}
+
+/* Form Side */
+.form-group { margin-bottom: 1.5rem; }
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #0f172a;
+    background: #f8fafc;
+    transition: 0.3s;
+}
+
+.contact-form input:focus, 
+.contact-form select:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+}
+
+.submit-btn {
+    background: #0f172a;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #0066cc;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 102, 204, 0.2);
+}
+
+/* --- 3. Map Section --- */
+.map-section {
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    filter: grayscale(100%); /* Clean black & white map look */
+    transition: filter 0.5s;
+}
+
+.map-container iframe:hover {
+    filter: grayscale(0%); /* Color on hover */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 3rem;
+    }
+    .hero-title { font-size: 3rem; }
+    .contact-hero { padding-top: 150px; }
+}

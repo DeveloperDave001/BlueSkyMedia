@@ -1,0 +1,169 @@
+@media screen and (width<=1300px){
+
+    .majorLogo{
+        width: 20vw;
+    }
+    .otherLogos{
+        width: 20vw;
+    }
+    .otherLogos a img{
+        width: 4vw;
+    }
+    
+
+    
+}  
+
+@media screen and (width <= 1110px){
+    .seenEnough2{
+        width: 20%;
+       }
+    
+    .otherLogos{
+            width: 70%;
+    }
+    
+    .otherLogos a img{
+        width:40px;
+    }
+    .final_hero{
+       height: 100vh;
+    }
+    
+}
+
+@media screen and (width <= 1080px){
+    .otherLogos{
+        width:100%;
+        margin: 10px;
+}
+#socials{
+    font-size: 12px;
+}
+.otherLogos{
+    width: 20vw;
+}
+.otherLogos a img{
+    width:40px;
+}
+} 
+
+
+@media screen and (width <= 900px){
+.footerContact2 .GeneralButton img{
+   display: none;
+}
+
+.footerContact2 .GeneralButton{
+   height: 7vw;
+ }
+
+ .footer{
+    height: 40vh;
+ }
+.upper{
+    display: none;
+}
+}
+
+@media screen and (width <= 990px) {
+    .footer{
+        height: 50vh;
+    }
+    .upper{
+        display: none;
+    
+}
+}
+
+@media screen and (width <= 885px) {
+    .footerLogos{
+        padding: 2;
+        flex-flow: row wrap;
+    
+    }
+    .otherLogos a img{
+        width: 4vw;
+    }
+    .majorLogo{
+        width: 17vw;
+        height: auto;
+    }
+
+    .footer{
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .lower{
+        display: flex;
+        background-color: #333333;
+    }
+    .seenEnough2{
+        width: 50%;
+        display: none;
+        flex: 0;
+    }
+    #footerCatchPhrase{
+        flex: 0;
+    }
+}
+
+
+@media screen and (width <= 780px){
+.footer{
+    height: 20vh;
+}
+}
+@media screen and (width <= 690px){
+.footer{
+    height: 40vh;
+}
+.majorLogo{
+    width: 30vw;
+}
+.otherLogos{
+    width: 30vw;
+}
+
+.footerLogos{
+    flex-flow: row wrap;
+}
+
+.otherLogos {
+    width: 30vw;
+}
+
+.otherLogos a img{
+    width: 7vw;
+}
+}
+
+@media screen and (width <= 560px){
+    .footer{
+        height: 40vh;
+    }
+    .footerContact2 .GeneralButton{
+        height: 15vh;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media screen and (width <= 540px){
+    .footerContact2 .GeneralButton{
+        height: 15vw;
+        text-align: center;
+      }
+}
+
+@media screen and (width <= 460px){
+    .footer{
+        height: 25vh;
+    }
+ 
+
+}
+

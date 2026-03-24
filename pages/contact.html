@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BlueSky Media Promotions</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="shortcut icon" href="../assets/images/LogoIcon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+    <link rel="stylesheet" href="../assets/css/contact-modern.css"> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+</head>
+
+<body>
+
+       <header class="header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../assets/images/BSLogo.png" alt="BlueSky" class="company-logo">
+                </a>
+                <img src="../assets/images/15th Aniversary Logo 1.3.png" alt="15th Anniversary" class="anniversary-logo">
+            </div>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="About.html" class="nav-link active">About Us</a></li>
+                    
+                    <li class="dropdown-trigger">
+                        <a href="#" class="nav-link">
+                            Portfolio <i class="fas fa-chevron-down chevron"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-grid">
+                                <a href="BlueSkyMediapromotions.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-bullhorn"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">Marketing Promotions</span>
+                                        <span class="dd-desc">Strategic ad placement</span>
+                                    </div>
+                                </a>
+                                <a href="PrintHouse.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-print"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">Print House</span>
+                                        <span class="dd-desc">Premium branding</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="contact.html" class="btn-contact">Let's Talk</a>
+                <div class="hamburger">
+                    <div class="menu-line top"></div>
+                    <div class="menu-line middle"></div>
+                    <div class="menu-line bottom"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <div class="mobile-backdrop"></div>
+        <div class="mobile-nav-content">
+            <div class="mobile-header">
+                <span class="mobile-menu-title">Menu</span>
+                <div class="close-menu-btn"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="mobile-links-wrapper">
+                <a href="../index.html" class="mobile-link">Home</a>
+                <a href="About.html" class="mobile-link">About Us</a>
+                <div class="mobile-dropdown-container">
+                    <div class="mobile-link has-dropdown">
+                        Portfolio <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="mobile-sub-links">
+                        <a href="BlueSkyMediapromotions.html">Marketing Promotions</a>
+                        <a href="PrintHouse.html">Print House</a>
+                    </div>
+                </div>
+                <a href="services.html" class="mobile-link">Services</a>
+                <a href="contact.html" class="mobile-cta">Start a Project</a>
+            </div>
+        </div>
+    </div>
+
+    <main id="smooth-wrapper">
+
+        <section class="contact-hero">
+            <div class="container center">
+                <span class="hero-pill">Get in Touch</span>
+                <h1 class="hero-title">Let's Start a <br><span class="highlight-blue">Conversation.</span></h1>
+                <p class="hero-desc">
+                    Whether you have a project in mind or just want to say hello, we'd love to hear from you.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-grid-section">
+            <div class="container">
+                <div class="contact-layout">
+                    
+                    <div class="info-side">
+                        <h3 class="side-title">Contact Details</h3>
+                        
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-text">
+                                <h4>Head Office</h4>
+                                <p>25 Akintan Street, Dideolu Court Estate,<br>Ogba, Ikeja, Lagos, Nigeria.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-text">
+                                <h4>Abuja Branch</h4>
+                                <p>Plot 525 Obafemi Awolowo Way (Building of the former Mr Biggs)<br>Jabi, Abuja, Nigeria.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="info-text">
+                                <h4>Call Us</h4>
+                                <p>01-0951441<br>0806-006-5605<br>0909-836-8000</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-text">
+                                <h4>Email Us</h4>
+                                <p><a href="mailto:info@bsmediapro.com">info@bsmediapro.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="social-block">
+                            <h4>Follow Us</h4>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-side">
+                        <form action="#" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject">
+                                    <option value="General">General Inquiry</option>
+                                    <option value="Media">Marketing Promotions</option>
+                                    <option value="Print">Print & Branding</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.385317429399!2d3.3396!3d6.6291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzcnNDQuOCJOIDPCsDIwJzIyLjYiRQ!5e0!3m2!1sen!2sng!4v1620000000000!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-cta-section">
+                    <h2 class="cta-heading">Let's make something <br>great together.</h2>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-content-grid">
+                    <div class="footer-col brand-col">
+                        <img src="../assets/images/BSLogo.png" alt="BlueSky" class="footer-logo">
+                        <p class="footer-desc">Your strategic partner for brand visibility and growth.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-label">Explore</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="About.html">About Us</a></li>
+                            <li><a href="../Careers/careers.html">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-label">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="BlueSkyMediapromotions.html">Marketing Promotions</a></li>
+                            <li><a href="PrintHouse.html">Print House</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col contact-col">
+                        <h4 class="footer-label">Connect</h4>
+                        <a href="https://linktr.ee/blueskymediapromotions" target="_blank" class="social-link-item">
+                            <i class="fas fa-share-alt"></i> Linktree
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Ⓒ 2025 BlueSky Media Promotions. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="../assets/js/style.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.from(".hero-title", { y: 30, opacity: 0, duration: 1, delay: 0.2 });
+            gsap.from(".contact-layout", { y: 50, opacity: 0, duration: 1, delay: 0.4 });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print House | BlueSky Media Promotions</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="shortcut icon" href="../assets/images/LogoIcon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+    <link rel="stylesheet" href="../assets/css/print-modern.css"> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+</head>
+
+<body>
+
+       <header class="header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../assets/images/BSLogo.png" alt="BlueSky" class="company-logo">
+                </a>
+                <img src="../assets/images/15th Aniversary Logo 1.3.png" alt="15th Anniversary" class="anniversary-logo">
+            </div>
+
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="About.html" class="nav-link active">About Us</a></li>
+                    
+                    <li class="dropdown-trigger">
+                        <a href="#" class="nav-link">
+                            Portfolio <i class="fas fa-chevron-down chevron"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-grid">
+                                <a href="BlueSkyMediapromotions.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-bullhorn"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">Marketing Promotions</span>
+                                        <span class="dd-desc">Strategic ad placement</span>
+                                    </div>
+                                </a>
+                                <a href="PrintHouse.html" class="dropdown-item">
+                                    <div class="dd-icon"><i class="fas fa-print"></i></div>
+                                    <div class="dd-text">
+                                        <span class="dd-title">Print House</span>
+                                        <span class="dd-desc">Premium branding</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="contact.html" class="btn-contact">Let's Talk</a>
+                <div class="hamburger">
+                    <div class="menu-line top"></div>
+                    <div class="menu-line middle"></div>
+                    <div class="menu-line bottom"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <div class="mobile-backdrop"></div>
+        <div class="mobile-nav-content">
+            <div class="mobile-header">
+                <span class="mobile-menu-title">Menu</span>
+                <div class="close-menu-btn"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="mobile-links-wrapper">
+                <a href="../index.html" class="mobile-link">Home</a>
+                <a href="About.html" class="mobile-link">About Us</a>
+                <div class="mobile-dropdown-container">
+                    <div class="mobile-link has-dropdown">
+                        Portfolio <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="mobile-sub-links">
+                        <a href="BlueSkyMediapromotions.html">Marketing Promotions</a>
+                        <a href="PrintHouse.html">Print House</a>
+                    </div>
+                </div>
+                <a href="services.html" class="mobile-link">Services</a>
+                <a href="contact.html" class="mobile-cta">Start a Project</a>
+            </div>
+        </div>
+    </div>
+
+    <main id="smooth-wrapper">
+
+        <section class="print-hero">
+            <div class="container">
+                <div class="hero-split">
+                    <div class="hero-content">
+                        <span class="hero-overline">BlueSky Print House</span>
+                        <h1 class="hero-title">Precision in <br><span class="highlight-blue">Every Pixel.</span></h1>
+                        <p class="hero-desc">
+                            From branding to fabrication, we bring your visual identity to life with state-of-the-art print technology and premium materials.
+                        </p>
+                        <div class="hero-btns">
+                            <a href="contact.html" class="btn-primary">Start a Project</a>
+                            <a href="#services" class="btn-text-link">Explore Services <i class="fas fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="image-stack">
+                            <img src="../assets/images/printint2.jpeg" alt="Printing Press" class="img-back">
+                            <img src="../assets/images/Fabrication.jpeg" alt="Fabrication" class="img-front">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-wrapper section-padding">
+            <div class="container">
+                
+                <div class="section-header center mb-5">
+                    <span class="pill-badge">What We Do</span>
+                    <h2 class="big-heading">Crafting Visual Excellence</h2>
+                </div>
+
+                <div class="service-block right-img reveal-block">
+                    <div class="service-text">
+                        <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+                        <h3>Branding & Design</h3>
+                        <p>We bring your brand to life with thoughtful design and creative storytelling. From logo creation to complete visual identity systems, we combine strategy and aesthetics to ensure your brand is both memorable and meaningful.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Logo & Identity</li>
+                            <li><i class="fas fa-check"></i> Brand Strategy</li>
+                            <li><i class="fas fa-check"></i> Creative Direction</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <img src="../assets/images/Cat2.jpeg" alt="Branding Design">
+                    </div>
+                </div>
+
+                <div class="service-block left-img reveal-block">
+                    <div class="service-image">
+                        <img src="../assets/images/printint2.jpeg" alt="Premium Printing">
+                    </div>
+                    <div class="service-text">
+                        <div class="service-icon"><i class="fas fa-print"></i></div>
+                        <h3>Premium Printing</h3>
+                        <p>Precision, quality, and vibrance—our printing services deliver results that speak volumes. We offer high-quality print solutions including business cards, brochures, and magazines using premium materials.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Large Format</li>
+                            <li><i class="fas fa-check"></i> Corporate Stationery</li>
+                            <li><i class="fas fa-check"></i> Marketing Collateral</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-block right-img reveal-block">
+                    <div class="service-text">
+                        <div class="service-icon"><i class="fas fa-hammer"></i></div>
+                        <h3>Design Fabrication</h3>
+                        <p>Transform your ideas into physical reality. From signage to custom displays and event props, we blend innovation with craftsmanship. Whether it’s wood, acrylic, or metal, we build structures that align with your brand.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> 3D Signage</li>
+                            <li><i class="fas fa-check"></i> Event Booths</li>
+                            <li><i class="fas fa-check"></i> Custom Displays</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <img src="../assets/images/Fabrication.jpeg" alt="Fabrication">
+                    </div>
+                </div>
+
+                <div class="service-block left-img reveal-block">
+                    <div class="service-image">
+                        <img src="../assets/images/LaGrana – redesign.jpeg" alt="Packaging Design">
+                    </div>
+                    <div class="service-text">
+                        <div class="service-icon"><i class="fas fa-box-open"></i></div>
+                        <h3>Package Design</h3>
+                        <p>Great packaging does more than protect—it communicates. We design packaging that combines form and function to elevate your product's presence on the shelf, from custom boxes to labels and sleeves.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Product Packaging</li>
+                            <li><i class="fas fa-check"></i> Label Design</li>
+                            <li><i class="fas fa-check"></i> Unboxing Experience</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="cta-bg-image" style="background-image: url('../assets/images/bg2.jpg.jpeg');"></div>
+            <div class="cta-overlay"></div>
+            <div class="container relative z-10 center">
+                <h2 class="cta-title">Ready to print your vision?</h2>
+                <p class="cta-text">
+                    Let's create something tangible that your audience will love.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-contact large">
+                        <span>Get a Quote</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-cta-section">
+                    <h2 class="cta-heading">Need a Print? <br>Let's Talk.</h2>
+                    <a href="contact.html" class="big-arrow-btn">
+                        <span class="btn-text">Contact Us</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-content-grid">
+                    <div class="footer-col brand-col">
+                        <img src="../assets/images/BSLogo.png" alt="BlueSky" class="footer-logo">
+                        <p class="footer-desc">Delivering excellence in print and fabrication across Africa.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-label">Explore</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="About.html">About Us</a></li>
+                            <li><a href="../Careers/careers.html">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-label">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="BlueSkyMediapromotions.html">Marketing Promotions</a></li>
+                            <li><a href="PrintHouse.html">Print House</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col contact-col">
+                        <h4 class="footer-label">Connect</h4>
+                        <a href="https://linktr.ee/blueskymediapromotions" target="_blank" class="social-link-item">
+                            <i class="fas fa-share-alt"></i> Linktree
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Ⓒ 2025 BlueSky Media Promotions. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="../assets/js/style.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            gsap.registerPlugin(ScrollTrigger);
+            
+            // Reveal Service Blocks
+            gsap.utils.toArray('.reveal-block').forEach((block) => {
+                gsap.from(block, {
+                    scrollTrigger: { trigger: block, start: "top 85%" },
+                    y: 60, opacity: 0, duration: 0.8, ease: "power2.out"
+                });
+            });
+
+            // Hero Animation
+            gsap.from(".hero-content", { x: -50, opacity: 0, duration: 1, delay: 0.2 });
+            gsap.from(".image-stack", { x: 50, opacity: 0, duration: 1, delay: 0.4 });
+        });
+    </script>
+</body>
+</html>

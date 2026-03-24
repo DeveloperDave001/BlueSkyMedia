@@ -1,0 +1,193 @@
+/* =========================================
+   BlueSky Group | Services Page Styles (Fixed)
+   ========================================= */
+
+/* --- 1. Hero Section --- */
+.services-hero {
+    position: relative;
+    /* Pushes content down below fixed header */
+    padding: 250px 0 100px; 
+    background-color: #f8fafc;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero-pill {
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0066cc;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.hero-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.1;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.highlight-blue { color: #0066cc; }
+
+.hero-desc {
+    font-size: 1.15rem;
+    color: #64748b;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-bg-graphic {
+    position: absolute;
+    top: -50%; left: 50%;
+    transform: translateX(-50%);
+    width: 1000px; height: 1000px;
+    background: radial-gradient(circle, rgba(224, 242, 254, 0.5) 0%, transparent 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* --- 2. Services Grid --- */
+.services-list {
+    background: white;
+    padding-bottom: 8rem;
+    position: relative;
+    z-index: 2;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.service-card {
+    background: white;
+    border-radius: 24px;
+    padding: 2.5rem;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    /* Ensure visibility is ON by default */
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+.service-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 40px rgba(0, 102, 204, 0.1);
+    border-color: #e0f2fe;
+}
+
+.card-icon {
+    width: 60px; height: 60px;
+    background: #f0f9ff;
+    color: #0066cc;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    flex-grow: 1; 
+}
+
+/* Image Wrapper */
+.card-image-wrapper {
+    height: 250px;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: auto;
+}
+
+.card-image-wrapper img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.service-card:hover .card-image-wrapper img {
+    transform: scale(1.05);
+}
+
+/* Wide Card Styling */
+.service-card.wide {
+    grid-column: span 2;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.service-card.wide .content-side { flex: 1; }
+.service-card.wide .image-side { 
+    flex: 1; 
+    height: 350px; 
+    border-radius: 16px; 
+    overflow: hidden; 
+}
+
+.service-card.wide .image-side img {
+    width: 100%; height: 100%; object-fit: cover;
+}
+
+/* --- 3. CTA Banner --- */
+.cta-banner {
+    position: relative;
+    padding: 8rem 0;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    background: #0f172a;
+}
+.cta-bg-image {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.3;
+}
+.cta-title { font-family: 'Outfit', sans-serif; font-size: 3rem; margin-bottom: 2rem; color: white; }
+
+.cta-buttons{
+    /* border: 2px solid white; */
+    width: fit-content;
+    display: inline-flex;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .services-grid { grid-template-columns: 1fr; }
+    .service-card.wide { grid-column: span 1; flex-direction: column; }
+    .service-card.wide .image-side { width: 100%; height: 250px; }
+    
+    .hero-title { font-size: 3rem; }
+    .services-hero { padding-top: 150px; }
+}

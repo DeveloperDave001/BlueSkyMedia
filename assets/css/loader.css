@@ -1,0 +1,102 @@
+
+/* =========================================
+   BlueSky Group | Bulletproof Full-Screen Loader
+   ========================================= */
+
+.loader {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: #050a14 !important; /* Rich Matte Navy */
+    z-index: 999999 !important; /* Higher than header and all content */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Hide class called by JS */
+.loader.hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+.loader-content {
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    max-width: 400px;
+}
+
+.loader-logo-text {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: -1px;
+    margin-bottom: 2rem;
+    animation: loaderTextFade 1s ease-out forwards;
+}
+
+.brand-blue {
+    color: var(--primary-blue);
+}
+
+.progress-container {
+    width: 250px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent-sky));
+    animation: loadProgressAnim 2.5s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    box-shadow: 0 0 15px rgba(0, 102, 204, 0.8);
+}
+
+.loader-status {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 1.5rem;
+    opacity: 0;
+    animation: fadeInStatus 0.5s ease-out 0.5s forwards;
+}
+
+/* Animations */
+@keyframes loadProgressAnim {
+    0% { width: 0%; }
+    10% { width: 5%; }
+    40% { width: 30%; }
+    70% { width: 85%; }
+    100% { width: 100%; }
+}
+
+@keyframes loaderTextFade {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInStatus {
+    to { opacity: 1; }
+}
+
+/* Reset fix to prevent scroll during loading */
+body.loading {
+    overflow: hidden !important;
+}
